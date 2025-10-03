@@ -1,88 +1,136 @@
+# 📑 PDF Text Extraction Benchmark
 
-# Data 
-* A Pdf with over 500 Pages.
+This project compares multiple Python libraries and tools for extracting text from a **PDF with over 500 pages**.  
+The goal is to evaluate **which tool provides the maximum information** while balancing **speed and accuracy** for both **unscanned (text-based) PDFs** and **scanned (image-based) PDFs**.
 
-# Extraction of Text from PDF
+---
 
-* Selecting the one which gives the maximum info from the pdfs.
+## 📂 Data
+- A single **PDF file (~500+ pages)** tested across multiple libraries.
 
-1. PyPDF2
+---
 
-Unscanned PDF Text Length : 
-Time Taken for Unscanned PDF : 
+## ⚙️ Extraction Methods Tested
 
-Scanned PDF Text Length : 
-Time Taken for Scanned PDF : 
+### 1. PyPDF2
+- 📄 **Unscanned PDF**
+  - Text Length: `1,220,915`
+  - Time Taken: *N/A*
+- 🖼️ **Scanned PDF**
+  - Text Length: `0`
+  - Time Taken: *N/A*
 
-📄 2. pdfplumber
+---
 
-Unscanned PDF Text Length : 
-Time Taken for Unscanned PDF : 
+### 2. pdfplumber
+- 📄 **Unscanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
+- 🖼️ **Scanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
 
-Scanned PDF Text Length : 
-Time Taken for Scanned PDF : 
+---
 
-📘 3. pdfminer.six
+### 3. pdfminer.six
+- 📄 **Unscanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
+- 🖼️ **Scanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
 
-Unscanned PDF Text Length : 
-Time Taken for Unscanned PDF : 
+---
 
-Scanned PDF Text Length : 
-Time Taken for Scanned PDF : 
+### 4. PyMuPDF (fitz)
+- 📄 **Unscanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
+- 🖼️ **Scanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
 
-🧩 4. PyMuPDF (fitz)
+---
 
-Unscanned PDF Text Length : 
-Time Taken for Unscanned PDF : 
+### 5. Apache Tika
+- 📄 **Unscanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
+- 🖼️ **Scanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
 
-Scanned PDF Text Length : 
-Time Taken for Scanned PDF : 
+---
 
-🧠 5. Tika (Apache Tika)
+### 6. pdf2image + pytesseract (OCR)
+- 📄 **Unscanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
+- 🖼️ **Scanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
 
-Unscanned PDF Text Length : 
-Time Taken for Unscanned PDF : 
+---
 
-Scanned PDF Text Length : 
-Time Taken for Scanned PDF : 
+### 7. PyMuPDF + pytesseract (Hybrid OCR)
+- 📄 **Unscanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
+- 🖼️ **Scanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
 
-🧾 6. pdf2image + pytesseract
+---
 
-Unscanned PDF Text Length : 
-Time Taken for Unscanned PDF : 
+### 8. Camelot / Tabula-py (Tables)
+- 📄 **Unscanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
+- 🖼️ **Scanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
 
-Scanned PDF Text Length : 
-Time Taken for Scanned PDF : 
+---
 
-🧠 7. pymupdf + pytesseract (Hybrid)
+### 9. Unstructured (by Unstructured.io)
+- 📄 **Unscanned PDF**
+  - Text Length: `1,216,833`
+  - Time Taken: `3m 18.4s`
+- 🖼️ **Scanned PDF**
+  - Text Length: `1,224,325`
+  - Time Taken: `112m 37.4s`
 
-Unscanned PDF Text Length : 
-Time Taken for Unscanned PDF : 
+---
 
-Scanned PDF Text Length : 
-Time Taken for Scanned PDF : 
+### 10. Textract (AWS) / Azure Form Recognizer
+- 📄 **Unscanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
+- 🖼️ **Scanned PDF**
+  - Text Length: *N/A*
+  - Time Taken: *N/A*
 
-🏗️ 8. camelot / tabula-py
+---
 
-Unscanned PDF Text Length : 
-Time Taken for Unscanned PDF : 
+## 📊 Summary Table
 
-Scanned PDF Text Length : 
-Time Taken for Scanned PDF : 
+| Tool / Library            | Unscanned PDF (Text Length) | Time Taken  | Scanned PDF (Text Length) | Time Taken   |
+|----------------------------|-----------------------------|-------------|----------------------------|--------------|
+| **PyPDF2**                 | 1,220,915                  | N/A         | 0                          | N/A          |
+| **pdfplumber**             | N/A                         | N/A         | N/A                        | N/A          |
+| **pdfminer.six**           | N/A                         | N/A         | N/A                        | N/A          |
+| **PyMuPDF (fitz)**         | N/A                         | N/A         | N/A                        | N/A          |
+| **Apache Tika**            | N/A                         | N/A         | N/A                        | N/A          |
+| **pdf2image + pytesseract**| N/A                         | N/A         | N/A                        | N/A          |
+| **PyMuPDF + pytesseract**  | N/A                         | N/A         | N/A                        | N/A          |
+| **Camelot / Tabula-py**    | N/A                         | N/A         | N/A                        | N/A          |
+| **Unstructured.io**        | 1,216,833                  | 3m 18.4s    | 1,224,325                  | 112m 37.4s   |
+| **AWS Textract / Azure**   | N/A                         | N/A         | N/A                        | N/A          |
 
-🌐 9. unstructured (by Unstructured.io)
+---
 
-Unscanned PDF Text Length : 1216833
-Time Taken for Unscanned PDF : 3m 18.4s
+✅ **Next Steps:**  
+- Fill missing benchmarks for each library.  
+- Add qualitative notes (accuracy, formatting quality, table handling, etc.).  
+- Consider GPU acceleration for OCR methods (Tesseract, AWS Textract).  
 
-Scanned PDF Text Length : 1224325
-Time Taken for Scanned PDF : 112m 37.4s
-
-
-🧮 10. Textract (AWS) and Azure Form Recognizer
-
-Unscanned PDF Text Length : 
-Time Taken for Unscanned PDF : 
-
-Scanned PDF Text Length : 
-Time Taken for Scanned PDF :  
