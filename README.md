@@ -6,8 +6,7 @@ The goal is to evaluate **which tool provides the maximum information** while ba
 ---
 
 ## 📂 Data
-- A single **PDF file (~500+ pages)** tested across multiple libraries.
-
+- One Scanned PDF `scanned_484.pdf` with 484 pages and an unscanned PDF `unscanned_360` with 360 pages.
 ---
 
 ## ⚙️ Extraction Methods Tested
