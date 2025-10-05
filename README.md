@@ -27,17 +27,17 @@ The goal is to evaluate **which tool provides the maximum information** while ba
   - Time Taken: *1m 11.4s*
 - 🖼️ **Scanned PDF**
   - Text Length: *0*
-  - Time Taken: *0.6*
+  - Time Taken: *0.6s*
 
 ---
 
 ### 3. pdfminer.six
 - 📄 **Unscanned PDF**
-  - Text Length: *N/A*
-  - Time Taken: *N/A*
+  - Text Length: *1311791*
+  - Time Taken: *30.9s*
 - 🖼️ **Scanned PDF**
-  - Text Length: *N/A*
-  - Time Taken: *N/A*
+  - Text Length: *484*
+  - Time Taken: *0.7s*
 
 ---
 
