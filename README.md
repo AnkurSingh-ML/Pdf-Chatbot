@@ -13,21 +13,21 @@ The goal is to evaluate **which tool provides the maximum information** while ba
 
 ### 1. PyPDF2
 - 📄 **Unscanned PDF**
-  - Text Length: `1,220,915`
-  - Time Taken: *N/A*
+  - Text Length: `1220915`
+  - Time Taken: *20.6s*
 - 🖼️ **Scanned PDF**
   - Text Length: `0`
-  - Time Taken: *N/A*
+  - Time Taken: *0.3*
 
 ---
 
 ### 2. pdfplumber
 - 📄 **Unscanned PDF**
-  - Text Length: *N/A*
-  - Time Taken: *N/A*
+  - Text Length: *1217863*
+  - Time Taken: *1m 11.4s*
 - 🖼️ **Scanned PDF**
-  - Text Length: *N/A*
-  - Time Taken: *N/A*
+  - Text Length: *0*
+  - Time Taken: *0.6*
 
 ---
 
