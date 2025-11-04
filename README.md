@@ -78,4 +78,15 @@ The goal is to evaluate **which tool provides the maximum information** while ba
 # Chunking Stratergy
 
 Different options
-Character text splitting (Fixed length characters)
+1. Character text splitting (Fixed length characters)
+2. Sentece Splitting
+3. Recursive Character Text Splitting
+4. Documnet Specific Splitting
+5. Semantic Chunking
+6. Agentic Chunking
+
+## Evalation Metrics
+* Recall@k / Precision@k
+* Ragas (by Hugging Face)
+* LangChain’s Evaluation Module
+* LlamaIndex Eval
